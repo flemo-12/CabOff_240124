@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "weather_transformed" {
-  bucket = "weather_transformed_bucket"
+  bucket = "weathertransformedbucket240124"
 
   tags = {
     Name        = "Weather Transformed Bucket"

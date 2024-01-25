@@ -1,7 +1,7 @@
 resource "aws_cloudwatch_event_rule" "every_weekday" {
     name = "every-weekday"
-    description = "Sends a every weekday at 5:00am"
-    schedule_expression = "cron(0 0 * * 1-5)"      
+    description = "Sends a every weekday at 5:00am"  
+    schedule_expression = "cron(0 5 ? * MON-FRI *)"    
 }
 
 resource "aws_cloudwatch_event_target" "trigger_weather_retrieve_strategy" {
